@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --mainFont: "Lato", sans-serif;
+  --subFont: "Libre Baskerville";
+  --mainColor: #f2efea;
+  --accentColor: #73241f;
+  --detailColor: #fffff;
+
+  --sidePadding: 1rem;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+.logo {
+  margin-left: 2rem;
+  align-items: center;
+  background-position: center;
+}
+nav {
+}
+nav ul {
+  display: flex;
+  font-family: var(--subFont);
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 2px;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--accentColor);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+
+  margin-left: 2rem;
+}
+.productCard {
+  width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  text-decoration: none;
+}
+.productCardImage {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.productlink {
+  width: 100%;
+  text-decoration: none;
+  font-family: var(--mainFont);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: black;
+}
+
+.subprod {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 96%;
+  border: 0.2px solid lightgray;
+}
+.subprod h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  border-bottom: 0.2px lightgray solid;
+  height: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: grey;
+}
+.subprod h3 span {
+  color: black;
+  font-weight: 600;
+  margin-left: 3px;
+  font-family: var(--subFont);
+  text-transform: uppercase;
+}
+.p-name {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-bottom: lightgray 1px solid;
+  font-family: var(--subFont);
+}
+.p-brand {
+  color: black;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: -7px;
+}
+.proddin {
+  color: black !important;
+  margin-left: 1px;
+}
+.buttonProduct {
+  text-decoration: none;
+
+  color: var(--accentColor);
+
+  font-family: var(--mainFont);
+  margin-bottom: 2rem;
+  width: fit-content;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3px;
+
+  border: var(--accentColor) 2px solid;
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.buttonProduct:hover {
+  background-color: var(--accentColor);
+  color: white;
+  transition: 0.2s;
+}
